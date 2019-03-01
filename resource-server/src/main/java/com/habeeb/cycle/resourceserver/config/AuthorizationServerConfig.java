@@ -5,8 +5,7 @@ import org.springframework.security.oauth2.config.annotation.configurers.ClientD
 import org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer;
 
-@Configuration
-@EnableAuthorizationServer
+
 public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter {
 
     @Override
