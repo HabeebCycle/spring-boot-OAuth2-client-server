@@ -12,7 +12,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
         clients.inMemory()
-               .withClient("habeebcycle").secret("secret")
+               .withClient("habeebcycle").secret("{noop}secret")
                 .redirectUris("http://localhost:8090/user/employees")
                .authorizedGrantTypes("authorization_code")
                 .scopes("read").authorities("CLIENT");
